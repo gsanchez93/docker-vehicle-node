@@ -1,0 +1,23 @@
+{
+  "name": "docker_vehicle_node",
+  "version": "1.0.0",
+  "description": "Node.js API server with Docker for the Vehicle POC apps",
+  "repository": {
+    "type": "git",
+    "url": "gsanchez93/docker-vehicle-node"
+  },
+  "author": { 
+    "name" : "Gabby Sanchez",
+    "email" : "gabby@saperium.com",
+    "url" : "http://github.com/gsanchez93"
+  },
+  "scripts": {
+    "build": "docker build -t vehicle_node .",
+    "run": "docker run -t -p \"8081:8081\" vehicle_node"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  }
+}

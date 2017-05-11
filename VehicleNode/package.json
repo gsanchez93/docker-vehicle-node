@@ -1,0 +1,22 @@
+{
+  "name": "vehicle_node",
+  "version": "1.0.0",
+  "description": "Node.js API server for the Vehicle POC apps",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "docker build -t vehicle_node .",
+    "run": "docker run -t -p \"8081:8081\" vehicle_node"
+  },
+  "author": { 
+    "name" : "Gabby Sanchez",
+    "email" : "gabby@saperium.com",
+    "url" : "http://github.com/gsanchez93"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  }
+}
